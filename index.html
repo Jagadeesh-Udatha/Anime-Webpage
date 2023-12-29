@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Anime Web Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+  <div class="main-create-account">
+    
+    <div class="login-block">
+      
+      <div class="input-label">
+        <div>
+          <label for="name">User Name</label>
+        </div>
+        <div>
+          <input class="input-text" type="text"  autocomplete="off" placeholder="Enter UserName">  
+        </div>
+       
+      </div>
+      <div class="input-label">
+        <div>
+          <label for="password">Password</label>
+        </div>
+        <div>
+          <input class="input-text" id='letPassword' type='password'  autocomplete="off" placeholder="Enter Password">  
+          <i class="far fa-eye" id="togglePassword" onclick="togglePassword('letPassword')"></i>
+
+        </div>
+        <div id = "pass-crit" >
+        </div>
+      </div>
+      <div class="input-label">
+        <div>
+          <label for="confirm-password"> Confirm-Password</label>
+        </div>
+        <div>
+          <input class="input-text" id="letConfPassword" type='password'  autocomplete="off" placeholder="Confirm Password">  
+          <i class="far fa-eye" id="togglePassword" onclick="togglePassword('letConfPassword')"></i>
+
+        </div>
+        <div id="pass-conf">
+        </div>
+      </div>
+      <div class="sign-up-button">
+        <div>
+          <button> Create Account</button>
+        </div>
+        
+      </div>
+      <div  class="lines">
+        <p> <hr width="100px"> or Login With <hr width="100px"> </p>
+      </div>
+      
+      <div class="login-image-text">
+        <div>
+          <img src = "icons8-google-48.png" alt="google-image">
+        </div>
+        <div>
+          Login With Google
+        </div>
+        
+      </div>
+  
+      <div class="login-image-text">
+        <div>
+          <img src = "icons8-apple-50.png" alt="apple-image">
+        </div>
+        <div>
+          Login With Apple
+        </div>
+      </div> 
+      <div class="login-text-toPage"> Already have an account ? <span> Login here </span> </div>
+    </div>
+    
+
+    <div class="password-points">
+        <p class="small-letter"> &#10006; Password must contain one LowerCase Character.</p>
+        <p class="capital-letter"> &#10006; Password must contain one UpperCase Character.</p>
+        <p class="digit">  &#10006; Password must contain one or more Digits.</p>
+        <p class="speical-character">  &#10006; Password must contain one Special Character.</p>
+        <p class="tot-length">  &#10006; Password must be 8-15 Characters Long.</p>
+    </div>
+  </div>
+  
+  <script src = "index.js"> 
+
+  </script>
+  
+</body>
+</html>
